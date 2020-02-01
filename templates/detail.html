@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{%block content %}
+
+   <div class="detailed">
+       <h2>List of all predictions</h2>
+
+       <table class="detailed-content" style="width:100%">
+
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Country</th>
+                <th>Temperature(in degrees)</th>
+                <th>Humidity(grams per cm cube)</th>
+            </tr>
+
+        </thead>
+
+        {% for obj in objs %}
+        <tr>
+          <th>{{obj.city}}</th>
+          <th>{{obj.country}}</th>
+          <th>{{obj.temperature}}</th>
+          <th>{{obj.humidity}}</th>
+        </tr>
+      
+
+      {% endfor %}
+    </table>
+    </div>
+        {% endblock content %}
+  

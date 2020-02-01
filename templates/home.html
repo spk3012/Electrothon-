@@ -1,0 +1,33 @@
+{% extends 'base2.html' %}
+
+
+    {% block content %}
+
+    
+
+    <table class="content-table" style="width:100%">
+
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Country</th>
+                <th>Temperature(in degrees)</th>
+                <th>Humidity(grams per cm cube)</th>
+            </tr>
+
+        </thead>
+
+        {% for prediction in predictions %}
+        <tr>
+          <th>{{prediction.city}}</th>
+          <th>{{prediction.country}}</th>
+          <th>{{prediction.temperature}}</th>
+          <th>{{prediction.humidity}}</th>
+        </tr>
+      
+
+      {% endfor %}
+    </table>
+    
+        {% endblock content %}
+

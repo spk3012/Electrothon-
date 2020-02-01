@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  
+    
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section .content{
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+section .content h2{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 3em;
+}
+
+section .content p{
+    color: #fff ;
+    font-size: 1.2em;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fb7200, #fff301);
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5);
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 0px 25px 25px 0px;
+    font-size: 1.2em;
+    min-width: 400px;
+    text-align: left;
+}
+
+.content-table thead tr{
+    background-color: #05B6F9;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+
+}
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #F7C568;
+}
+.heading h2{
+    text-align: center;
+    ;
+    
+}
+
+.detailed-content{
+    border-collapse: collapse;
+    margin: 0px 25px 25px 0px;
+    font-size: 1.2em;
+    min-width: 400px;
+    text-align: left;
+}
+
+.detailed-content thead tr{
+    background-color: #05B6F9;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+
+}
+.detailed-content th,
+.detailed-content td{
+    padding: 12px 15px;
+
+}
+.detailed-content tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.detailed-content tbody tr:nth-of-type(even){
+    background-color: #F7C568;
+}
+.detailed h2{
+     text-align: center;
+     font-style: sans-serif;
+}
+section.link{
+    color: #fff;
+    font-style: sans-serif;
+}
+
+.nav-top{
+    
+    display: flex;
+}
