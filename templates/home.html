@@ -3,31 +3,37 @@
 
     {% block content %}
 
+     <!--///Home slider /// -->                  
+     <div class="carousel carousel-slider">
+      <a class="carousel-item" href="#one!"><img src="http://www.simpleimageresizer.com/_uploads/photos/f2c94a60/forest-fire-4k-yf-1024x768_4_968x450.jpg"></a>
+      <div class="carousel-fixed-item center">
+        <h2 class="white-text">Real-time Autonomous Fire Predictor</h2>
+        <p class="white-text"> All rights reserved to Team CLOVER</p>
+        <a class="waves-effect waves-light btn" href="detail.html" target="_blank">More info</a>
+      </div>
+      <a class="carousel-item" href="#two!"><img src="http://getwallpapers.com/wallpaper/full/e/e/2/212977.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="http://getwallpapers.com/wallpaper/full/9/c/c/213005.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="https://wallpapermania.eu/images/lthumbs/2020-01/10223_Fireman-works-to-stop-the-big-fire-in-Australia-Forest-burn.jpg"></a>
+    </div>
+     
+    <script>
+        $(document).ready(function(){
+        $('.carousel.carousel-slider').carousel({
+          
+          fullWidth: true,
+          indicators: true,
+          duration: 200,
+          });
+
+         
+       
+        });
+        </script>
+
+
+
+
     
-
-    <table class="content-table" style="width:100%">
-
-        <thead>
-            <tr>
-                <th>City</th>
-                <th>Country</th>
-                <th>Temperature(in degrees)</th>
-                <th>Humidity(grams per cm cube)</th>
-            </tr>
-
-        </thead>
-
-        {% for prediction in predictions %}
-        <tr>
-          <th>{{prediction.city}}</th>
-          <th>{{prediction.country}}</th>
-          <th>{{prediction.temperature}}</th>
-          <th>{{prediction.humidity}}</th>
-        </tr>
-      
-
-      {% endfor %}
-    </table>
     
         {% endblock content %}
 

@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <style>
         *{ font-family: 'Roboto', sans-serif; }
+
+        
     </style>
        </head>
        <body>
@@ -34,25 +36,10 @@
             </div>
           </nav>
         
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-          </ul>
-                  
-          <div class="slider">
-            <a class="carousel-item" href="#one!"><img src="http://getwallpapers.com/wallpaper/full/4/4/e/212953.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="http://getwallpapers.com/wallpaper/full/e/e/2/212977.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="http://getwallpapers.com/wallpaper/full/9/c/c/213005.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="https://wallpapermania.eu/images/lthumbs/2020-01/10223_Fireman-works-to-stop-the-big-fire-in-Australia-Forest-burn.jpg"></a>
-          </div>
-           
-          <script>
+         {% block content %}
+         {%endblock content %}
 
-              $('.carousel.carousel-slider').carousel({
-          });
-              </script>
+         
 
 
 
